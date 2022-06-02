@@ -13,5 +13,5 @@ docker push nashno9/multi-worker:$SHA
 kubectl apply -f k8s
 
 #kubectl set image deployments/server-deployment server=nashno9/multi-server:$SHA
-kubectl set image deployments/client-deployment server=nashno9/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=nashno9/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=nashno9/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=nashno9/multi-worker:$SHA
